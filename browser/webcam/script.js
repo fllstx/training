@@ -34,7 +34,6 @@ form.addEventListener("input", sliderOnInput);
 
 function sliderOnInput(e) {
   const value = e.target.value;
-  console.log(e.target.name);
   switch (e.target.name) {
     case "grayscale":
       updateGrayscale(value / 10);
@@ -43,7 +42,7 @@ function sliderOnInput(e) {
       updateHue(value * 10 + "deg");
       break;
     case "blur":
-      updateGrayscale(value + "px");
+      updateBlur(value + "px");
       break;
   }
 }
