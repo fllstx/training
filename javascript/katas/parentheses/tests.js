@@ -5,7 +5,10 @@ describe("parentheses", () => {
   const testData = [
     { str: "()", isValid: true },
     { str: "(()", isValid: false },
-    { str: "((()())()()))))))", isValid: false }
+    { str: "((()())()()))))))", isValid: false },
+    { str: ")(", isValid: false },
+    { str: "()(())", isValid: true },
+    { str: "())(", isValid: false }
   ];
 
   testData.forEach(testDataItem => {
