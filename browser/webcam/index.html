@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Webcam fun</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Selfiebooth</h1>
+    <div class="video-container">
+      <video
+        autoplay
+        id="video"
+        style="--grayscale: 0; --blur: 0px; --hue: 0deg"
+      ></video>
+      <canvas></canvas>
+      <img src="" alt="" class="image image--hidden" />
+      <button class="btn btn--delete btn--hidden">
+        <i class="fa fa-trash-alt"></i>
+      </button>
+      <button class="btn btn--shoot"><i class="fa fa-camera"></i></button>
+    </div>
+    <form>
+      <label for="slider-grayscale">Grayscale</label>
+      <input
+        type="range"
+        name="grayscale"
+        id="slider-grayscale"
+        min="0"
+        max="10"
+        value="0"
+      />
+
+      <label for="slider-hue">Hue</label>
+      <input
+        type="range"
+        name="hue"
+        id="slider-hue"
+        min="0"
+        max="36"
+        value="0"
+      />
+
+      <label for="slider-blur">Blur</label>
+      <input
+        type="range"
+        name="blur"
+        id="slider-blur"
+        min="0"
+        max="10"
+        value="0"
+      />
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
