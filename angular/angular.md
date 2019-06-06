@@ -41,20 +41,3 @@ To create a new component use this command `ng generate component <path/name>` o
 ### Serve
 
 To start developing and serving the project use the `ng serve` command.
-
-## Exercise
-
-We will create a simple task list.
-
-![mockup](tasklist-mockup.png)
-
-- Use SCSS as preprocessor
-- Use `tl` as prefix
-- Use a service to manage the tasks
-  - Use an abstract class for the service
-  - The first version of the service saves the tasklist to the local storage
-- make the UI components as dumb as possible
-- use normalize.css
-- add icons to the buttons
-- Add a new task when enter is pressed
-- Add a duplicate check (duplicate tasks should be highlighted)
