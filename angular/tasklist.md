@@ -16,3 +16,4 @@ We will create a simple task list.
 - [ ] Add icons to the buttons
 - [ ] Add a new task when enter is pressed
 - [ ] Add a duplicate check (duplicate tasks should be highlighted)
+- [ ] The "Delete finished tasks" button is only active, when at least one task is finished
